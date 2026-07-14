@@ -5,7 +5,7 @@ reading, cleans/smooths it, predicts the adjustment needed to hit a target
 specification using a trained regression model, checks the recommendation
 against safe composition bounds, and serves it over an API.
 
-## Honest scope note
+## scope note
 
 This is a **scoped-down, real, working version** of the AlloyMindAI concept —
 built to be genuinely demoable rather than aspirational. It uses:
@@ -89,17 +89,4 @@ locally (no real network hop, no real sensor hardware, no concurrent load
 from other processes), so it should be described as such rather than as a
 production benchmark.
 
-## What this version does NOT include (be upfront about this)
 
-- No real spectrometer hardware integration
-- No Kafka/distributed streaming — ingestion is simulated in-process
-- No persistent database — predictions are logged in memory only
-  (a time-series DB like InfluxDB/TimescaleDB would be the natural next step)
-- No dashboard (Streamlit/Grafana) yet — API-only
-
-## Natural next steps (if extending further)
-
-1. Add a Streamlit dashboard to visualize live readings vs. recommendations
-2. Swap in a real dataset if/when spectrometer logs become available
-3. Add persistence with a time-series database
-4. Add Kafka for genuine high-throughput streaming ingestion
