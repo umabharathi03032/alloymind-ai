@@ -1,11 +1,13 @@
 # AlloyMindAI (Simplified Working Version)
 
+🔴 Live demo: https://alloymind-ai-nkec.onrender.com/docs (hosted on Render's free tier — the first request after a period of inactivity can take 30–60s to wake the service up; subsequent requests are fast)
+
 An AI-assisted alloy composition adjustment pipeline: takes a composition
 reading, cleans/smooths it, predicts the adjustment needed to hit a target
 specification using a trained regression model, checks the recommendation
 against safe composition bounds, and serves it over an API.
 
-## scope note
+## Scope note
 
 This is a **scoped-down, real, working version** of the AlloyMindAI concept —
 built to be genuinely demoable rather than aspirational. It uses:
@@ -88,5 +90,4 @@ All comfortably under the 500ms target — though note this is measured
 locally (no real network hop, no real sensor hardware, no concurrent load
 from other processes), so it should be described as such rather than as a
 production benchmark.
-
 
